@@ -1,0 +1,55 @@
+body{
+  height: 100vh;
+}
+.main > .wrap > .i-phone {
+  position: relative;
+  background-image: url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
+  background-repeat: no-repeat;
+  background-position: -12px 0;
+  background-size: cover;
+}
+.main > .wrap > .i-phone > .slide-wrap {
+  width: 230px;
+  height: 495px;
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  border-radius: 20px;
+}
+.slide > .slick-prev {
+  opacity: 0;
+  visibility: hidden;
+}
+.slide > .slick-next {
+  opacity: 0;
+  visibility: hidden;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+.slide > .slick-prev::before{
+  content : "";
+  font-size: 0;
+}
+.or{
+  position : relative;
+}
+.or::before{
+  content : " ";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  top : 50%;
+  left : 45px;
+  background-color: #ddd;
+}
+
+.or::after{
+  content : " ";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  top : 50%;
+  right : 45px;
+  background-color: #ddd;
+}
